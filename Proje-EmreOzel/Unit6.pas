@@ -1,0 +1,121 @@
+﻿unit Unit6;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Mask, Vcl.DBCtrls,
+  Data.DB, Vcl.Buttons, Vcl.ExtCtrls;
+
+type
+  TForm6 = class(TForm)
+    GroupBox1: TGroupBox;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    DBEdit1: TDBEdit;
+    DBEdit2: TDBEdit;
+    DBEdit3: TDBEdit;
+    DBEdit4: TDBEdit;
+    DBEdit5: TDBEdit;
+    DBEdit6: TDBEdit;
+    DBEdit7: TDBEdit;
+    Label1: TLabel;
+    DBEdit8: TDBEdit;
+    DBImage1: TDBImage;
+    Label9: TLabel;
+    SpeedButton1: TSpeedButton;
+    SpeedButton2: TSpeedButton;
+    SpeedButton3: TSpeedButton;
+    Button1: TButton;
+    OpenDialog1: TOpenDialog;
+    Label10: TLabel;
+    Label11: TLabel;
+    DBEdit9: TDBEdit;
+    SpeedButton4: TSpeedButton;
+    SpeedButton5: TSpeedButton;
+    SpeedButton6: TSpeedButton;
+    SpeedButton7: TSpeedButton;
+    procedure SpeedButton1Click(Sender: TObject);
+    procedure SpeedButton2Click(Sender: TObject);
+    procedure SpeedButton3Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+    procedure SpeedButton6Click(Sender: TObject);
+    procedure SpeedButton7Click(Sender: TObject);
+    procedure SpeedButton4Click(Sender: TObject);
+    procedure SpeedButton5Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form6: TForm6;
+    kitapSayisi : Integer;
+implementation
+
+{$R *.dfm}
+ uses Unit3, Jpeg;
+
+procedure TForm6.Button1Click(Sender: TObject);
+begin
+         if Opendialog1.Execute() then begin
+
+             DBImage1.Picture.LoadFromFile(OpenDialog1.FileName);
+
+         end;
+
+end;
+
+procedure TForm6.SpeedButton1Click(Sender: TObject);
+begin
+              Form3.ADOTable2.Insert;
+end;
+
+procedure TForm6.SpeedButton2Click(Sender: TObject);
+
+begin
+
+                      Form3.ADOTable2.Post;
+                      ShowMessage('Kitap kayıt edildi.');
+
+
+end;
+
+procedure TForm6.SpeedButton3Click(Sender: TObject);
+begin
+
+                  Form3.ADOTable2.Delete;
+                  ShowMessage('Kitap silindi.');
+
+                  kitapSayisi := kitapSayisi -1;
+                  Form3.Label2.Caption:= 'Toplam Kişi Sayısı: ' + IntToStr(kitapSayisi);
+
+end;
+
+procedure TForm6.SpeedButton4Click(Sender: TObject);
+begin
+             Form3.ADOTable2.Next;
+end;
+
+procedure TForm6.SpeedButton5Click(Sender: TObject);
+begin
+               Form3.ADOTable2.Last;
+end;
+
+procedure TForm6.SpeedButton6Click(Sender: TObject);
+begin
+             Form3.ADOTable2.Prior;
+end;
+
+procedure TForm6.SpeedButton7Click(Sender: TObject);
+begin
+             Form3.ADOTable2.First;
+end;
+
+end.

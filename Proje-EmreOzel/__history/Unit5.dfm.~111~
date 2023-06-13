@@ -1,0 +1,488 @@
+object Form5: TForm5
+  Left = 0
+  Top = 0
+  Caption = 'Okuyucu Kay'#305't'
+  ClientHeight = 544
+  ClientWidth = 610
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object GroupBox1: TGroupBox
+    Left = 32
+    Top = 47
+    Width = 545
+    Height = 474
+    Caption = 'Okuyucu  Bilgileri'
+    TabOrder = 0
+    object Label10: TLabel
+      Left = 50
+      Top = 109
+      Width = 45
+      Height = 15
+      Caption = 'Soyisim:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label11: TLabel
+      Left = 50
+      Top = 136
+      Width = 64
+      Height = 15
+      Caption = #214#287'renci No:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label12: TLabel
+      Left = 50
+      Top = 164
+      Width = 64
+      Height = 15
+      Caption = 'Fak'#252'lte Ad'#305':'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label13: TLabel
+      Left = 50
+      Top = 191
+      Width = 59
+      Height = 15
+      Caption = 'B'#246'l'#252'm Ad'#305':'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label14: TLabel
+      Left = 50
+      Top = 219
+      Width = 62
+      Height = 15
+      Caption = 'Telefon No:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label15: TLabel
+      Left = 50
+      Top = 274
+      Width = 70
+      Height = 15
+      Caption = #220'yelik Tarihi:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label16: TLabel
+      Left = 50
+      Top = 246
+      Width = 27
+      Height = 15
+      Caption = 'Mail:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label17: TLabel
+      Left = 50
+      Top = 302
+      Width = 36
+      Height = 15
+      Caption = 'Adres:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+    end
+    object SpeedButton1: TSpeedButton
+      Left = 108
+      Top = 392
+      Width = 90
+      Height = 41
+      Cursor = crHandPoint
+      Caption = 'Yeni Kay'#305't'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      Glyph.Data = {
+        9E020000424D9E020000000000005E0000002800000018000000180000000100
+        08000000000040020000210B0000210B00000A0000000A000000116A16001C8F
+        31001C98380023A13800488F480050986A007BD473008FE08400FF00FF00FFFF
+        FF00080808080808080808080808080808080808080808080808080808080808
+        0808080808080808080808080808080808080808080808080808080800000000
+        0808080808080808080808080808080808080804050603010008080808080808
+        0808080808080808080808040706030200080808080808080808080808080808
+        0808080407060302000808080808080808080808080808080808080407060302
+        0008080808080808080808080808080808080804070603020008080808080808
+        0808080808080808080808040706030200080808080808080808080808000000
+        0000000007060302000000000000000008080808040102020202020202020302
+        0202020202020201000808080403030303030303030303030303030303030303
+        0008080804060606060606060606030306060606060606060008080804050707
+        0707070707060302070707070707070500080808080404040404040407060302
+        0000000000000000080808080808080808080804070603020008080808080808
+        0808080808080808080808040706030200080808080808080808080808080808
+        0808080407060302000808080808080808080808080808080808080407060302
+        0008080808080808080808080808080808080804070603020008080808080808
+        0808080808080808080808040706030200080808080808080808080808080808
+        0808080405060301000808080808080808080808080808080808080804040404
+        0808080808080808080808080808080808080808080808080808080808080808
+        0808}
+      ParentFont = False
+      OnClick = SpeedButton1Click
+    end
+    object SpeedButton2: TSpeedButton
+      Left = 335
+      Top = 392
+      Width = 90
+      Height = 41
+      Cursor = crHandPoint
+      Caption = 'Sil'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      Glyph.Data = {
+        76060000424D7606000000000000360400002800000018000000180000000100
+        08000000000040020000430B0000430B0000000100000001000000399C00004A
+        A500004AAD000052B5000052BD00005ACE000063D6000063DE00006BEF00006B
+        F700FF00FF000073FF00007BFF00087BFF001084FF00188CFF00218CFF00299C
+        FF00319CFF00399CFF0039A5FF004AA5FF0052ADFF005AB5FF0063B5FF006BB5
+        FF0073BDFF009CD6FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000A0A0A0A0A0A
+        0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A
+        0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A
+        0A0A0A0A1304000202020202020101020102010001130A0A0A0A0A0A07070809
+        09090909090809080807060503020A0A0A0A0A0A060B0D0D0D0D0D0D0B0D0D0B
+        0B0B090706000A0A0A0A0A0A080B0D0E0E0F0E0E0E0D0D0B0B0B080906000A0A
+        0A0A0A0A080D0E0F1C190E0E0E0D0D0B191C0B0907000A0A0A0A0A0A080E0F0F
+        0F1C190E0E0D0D191C0B090B07020A0A0A0A0A0A0D0E1010100F1C190E0D191C
+        0B0B0B0B08020A0A0A0A0A0A0D10101010100F1C19191C0D0B0B090B09030A0A
+        0A0A0A0A0D11101110100F0F1C1C0D0D0B0B0B0D09020A0A0A0A0A0A0F101111
+        110F0F191C1C190D0D0D0B0B0B030A0A0A0A0A0A0E121111100F191C0E0D1C19
+        0B0B090B0B030A0A0A0A0A0A0F13121211191C0F0E0D0D1C190B0B0D0B020A0A
+        0A0A0A0A0F141513191C0F100E0E0D0D1C190D0D0B030A0A0A0A0A0A10161514
+        1C11100F0E0E0E0D0D1C0B0D0B040A0A0A0A0A0A1118171514131211100F0F0E
+        0F0E0E0D0B030A0A0A0A0A0A121A1A171515141312121211100F0F0E0B020A0A
+        0A0A0A0A14191A171513131212121211100F0E0D09050A0A0A0A0A0A1B141210
+        0F0F0E0E0E0F0E0D0D0D080808130A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A
+        0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A
+        0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A}
+      ParentFont = False
+      OnClick = SpeedButton2Click
+    end
+    object SpeedButton3: TSpeedButton
+      Left = 220
+      Top = 392
+      Width = 90
+      Height = 41
+      Cursor = crHandPoint
+      Caption = 'Kaydet'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000120B0000120B00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+        333333FFFFFFFFFFFFF33000077777770033377777777777773F000007888888
+        00037F3337F3FF37F37F00000780088800037F3337F77F37F37F000007800888
+        00037F3337F77FF7F37F00000788888800037F3337777777337F000000000000
+        00037F3FFFFFFFFFFF7F00000000000000037F77777777777F7F000FFFFFFFFF
+        00037F7F333333337F7F000FFFFFFFFF00037F7F333333337F7F000FFFFFFFFF
+        00037F7F333333337F7F000FFFFFFFFF00037F7F333333337F7F000FFFFFFFFF
+        00037F7F333333337F7F000FFFFFFFFF07037F7F33333333777F000FFFFFFFFF
+        0003737FFFFFFFFF7F7330099999999900333777777777777733}
+      NumGlyphs = 2
+      ParentFont = False
+      OnClick = SpeedButton3Click
+    end
+    object Label2: TLabel
+      Left = 303
+      Top = 204
+      Width = 171
+      Height = 15
+      Caption = 'Buraya resminizi ekleyebilirsiniz.'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label3: TLabel
+      Left = 50
+      Top = 81
+      Width = 23
+      Height = 13
+      Caption = #304'sim:'
+    end
+    object Label4: TLabel
+      Left = 50
+      Top = 352
+      Width = 164
+      Height = 15
+      Caption = 'T'#252'm bo'#351' alanlar'#305' doldurunuz !'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clRed
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label1: TLabel
+      Left = 50
+      Top = 54
+      Width = 74
+      Height = 15
+      Caption = 'TC Kimlik No:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+    end
+    object DBEdit1: TDBEdit
+      Left = 138
+      Top = 51
+      Width = 121
+      Height = 23
+      Cursor = crIBeam
+      DataField = 'TC_No'
+      DataSource = Form3.DataSource1
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+    end
+    object DBEdit2: TDBEdit
+      Left = 138
+      Top = 80
+      Width = 121
+      Height = 23
+      Cursor = crIBeam
+      DataField = 'Ad'
+      DataSource = Form3.DataSource1
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
+    end
+    object DBEdit3: TDBEdit
+      Left = 138
+      Top = 108
+      Width = 121
+      Height = 23
+      Cursor = crIBeam
+      DataField = 'Soyad'
+      DataSource = Form3.DataSource1
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 2
+    end
+    object DBEdit4: TDBEdit
+      Left = 138
+      Top = 137
+      Width = 121
+      Height = 23
+      Cursor = crIBeam
+      DataField = 'Ogrenci_No'
+      DataSource = Form3.DataSource1
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 3
+    end
+    object DBEdit6: TDBEdit
+      Left = 138
+      Top = 191
+      Width = 121
+      Height = 23
+      Cursor = crIBeam
+      DataField = 'Bolum'
+      DataSource = Form3.DataSource1
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 4
+    end
+    object DBEdit7: TDBEdit
+      Left = 138
+      Top = 220
+      Width = 121
+      Height = 23
+      Cursor = crIBeam
+      DataField = 'Telefon'
+      DataSource = Form3.DataSource1
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 5
+    end
+    object DBEdit8: TDBEdit
+      Left = 138
+      Top = 249
+      Width = 121
+      Height = 23
+      Cursor = crIBeam
+      DataField = 'Mail'
+      DataSource = Form3.DataSource1
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 6
+    end
+    object DBImage1: TDBImage
+      Left = 320
+      Top = 51
+      Width = 128
+      Height = 147
+      DataField = 'Resim'
+      DataSource = Form3.DataSource1
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+      Stretch = True
+      TabOrder = 7
+    end
+    object Button1: TButton
+      Left = 359
+      Top = 225
+      Width = 66
+      Height = 28
+      Cursor = crHandPoint
+      Caption = 'Ekle'
+      TabOrder = 8
+      OnClick = Button1Click
+    end
+    object DBEdit9: TDBEdit
+      Left = 138
+      Top = 278
+      Width = 121
+      Height = 23
+      Cursor = crIBeam
+      DataField = 'Uyelik_Tarihi'
+      DataSource = Form3.DataSource1
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 9
+    end
+    object DBEdit5: TDBEdit
+      Left = 138
+      Top = 166
+      Width = 121
+      Height = 21
+      Cursor = crIBeam
+      DataField = 'Fakulte_Adi'
+      DataSource = Form3.DataSource1
+      TabOrder = 10
+    end
+    object DBEdit10: TDBEdit
+      Left = 138
+      Top = 307
+      Width = 121
+      Height = 21
+      Cursor = crIBeam
+      DataField = 'Adres'
+      DataSource = Form3.DataSource1
+      TabOrder = 11
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 488
+    Top = 263
+  end
+end

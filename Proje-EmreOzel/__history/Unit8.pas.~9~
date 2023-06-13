@@ -1,0 +1,68 @@
+﻿unit Unit8;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.Grids, Vcl.DBGrids,
+  Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TForm8 = class(TForm)
+    DBGrid1: TDBGrid;
+    Label1: TLabel;
+    Edit1: TEdit;
+    SpeedButton1: TSpeedButton;
+    Label2: TLabel;
+    SpeedButton2: TSpeedButton;
+    SpeedButton3: TSpeedButton;
+    procedure SpeedButton1Click(Sender: TObject);
+    procedure Edit1Click(Sender: TObject);
+    procedure SpeedButton2Click(Sender: TObject);
+    procedure SpeedButton3Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form8: TForm8;
+
+implementation
+
+{$R *.dfm}
+  uses Unit3;
+procedure TForm8.Edit1Click(Sender: TObject);
+begin
+               ShowMessage('Lütfen Kitap adına göre arama yapınız !')
+end;
+
+procedure TForm8.SpeedButton1Click(Sender: TObject);
+begin
+                  Form3.ADOTable2.Filtered := false;
+
+                  if (Edit1.Text = ' ') then begin
+
+                  Form3.ADOTable2.Filtered := false;
+
+                  end else
+                  begin
+                  Form3.ADOTable2.Filtered := true;
+                  end;
+
+end;
+
+procedure TForm8.SpeedButton2Click(Sender: TObject);
+begin
+           Form3.ADOTable2.Edit;
+end;
+
+procedure TForm8.SpeedButton3Click(Sender: TObject);
+begin
+                Form3.ADOTable1.Edit;
+                Form3.ADOTable2.Post;
+                ShowMessage('Kitap düzenlendi.');
+end;
+
+end.

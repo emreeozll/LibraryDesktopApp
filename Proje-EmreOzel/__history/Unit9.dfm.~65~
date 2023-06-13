@@ -1,0 +1,564 @@
+object Form9: TForm9
+  Left = 0
+  Top = 0
+  Caption = 'Emanet Kay'#305't & Liste'
+  ClientHeight = 543
+  ClientWidth = 1079
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label11: TLabel
+    Left = 280
+    Top = 468
+    Width = 181
+    Height = 15
+    Caption = 'Toplam emanet edilen kitap say'#305's'#305':'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Times New Roman'
+    Font.Style = []
+    ParentFont = False
+    Visible = False
+  end
+  object DBGrid1: TDBGrid
+    Left = 280
+    Top = 25
+    Width = 737
+    Height = 392
+    DataSource = DataSource1
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Ogrenci_No'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Times New Roman'
+        Font.Style = []
+        Title.Alignment = taCenter
+        Title.Caption = #214#287'renci No'
+        Title.Color = clHighlight
+        Title.Font.Charset = ANSI_CHARSET
+        Title.Font.Color = clHighlight
+        Title.Font.Height = -12
+        Title.Font.Name = 'Times New Roman'
+        Title.Font.Style = [fsBold]
+        Width = 104
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Kitap_Barkod'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Times New Roman'
+        Font.Style = []
+        Title.Alignment = taCenter
+        Title.Caption = 'Kitap Barkod'
+        Title.Color = clHighlight
+        Title.Font.Charset = ANSI_CHARSET
+        Title.Font.Color = clHighlight
+        Title.Font.Height = -12
+        Title.Font.Name = 'Times New Roman'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = #304'sim'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Times New Roman'
+        Font.Style = []
+        Title.Alignment = taCenter
+        Title.Color = clHighlight
+        Title.Font.Charset = ANSI_CHARSET
+        Title.Font.Color = clHighlight
+        Title.Font.Height = -12
+        Title.Font.Name = 'Times New Roman'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Soyisim'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Times New Roman'
+        Font.Style = []
+        Title.Alignment = taCenter
+        Title.Color = clHighlight
+        Title.Font.Charset = ANSI_CHARSET
+        Title.Font.Color = clHighlight
+        Title.Font.Height = -12
+        Title.Font.Name = 'Times New Roman'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Kitap_Adi'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Times New Roman'
+        Font.Style = []
+        Title.Alignment = taCenter
+        Title.Caption = 'Kitap Ad'#305
+        Title.Color = clHighlight
+        Title.Font.Charset = ANSI_CHARSET
+        Title.Font.Color = clHighlight
+        Title.Font.Height = -12
+        Title.Font.Name = 'Times New Roman'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Yazar_Adi'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Times New Roman'
+        Font.Style = []
+        Title.Alignment = taCenter
+        Title.Caption = 'Yazar Ad'#305
+        Title.Color = clHighlight
+        Title.Font.Charset = ANSI_CHARSET
+        Title.Font.Color = clHighlight
+        Title.Font.Height = -12
+        Title.Font.Name = 'Times New Roman'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Alis_Tarihi'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Times New Roman'
+        Font.Style = []
+        Title.Alignment = taCenter
+        Title.Caption = 'Al'#305#351' Tarihi'
+        Title.Color = clHighlight
+        Title.Font.Charset = ANSI_CHARSET
+        Title.Font.Color = clHighlight
+        Title.Font.Height = -12
+        Title.Font.Name = 'Times New Roman'
+        Title.Font.Style = [fsBold]
+        Width = 142
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Verilis_Tarihi'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Times New Roman'
+        Font.Style = []
+        Title.Alignment = taCenter
+        Title.Caption = 'Verili'#351' Tarihi'
+        Title.Color = clHighlight
+        Title.Font.Charset = ANSI_CHARSET
+        Title.Font.Color = clHighlight
+        Title.Font.Height = -12
+        Title.Font.Name = 'Times New Roman'
+        Title.Font.Style = [fsBold]
+        Width = 142
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Telefon_No'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Times New Roman'
+        Font.Style = []
+        Title.Alignment = taCenter
+        Title.Caption = 'Telefon No'
+        Title.Color = clHighlight
+        Title.Font.Charset = ANSI_CHARSET
+        Title.Font.Color = clHighlight
+        Title.Font.Height = -12
+        Title.Font.Name = 'Times New Roman'
+        Title.Font.Style = [fsBold]
+        Width = 168
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Sayfa_Sayisi'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Times New Roman'
+        Font.Style = []
+        Title.Alignment = taCenter
+        Title.Caption = 'Sayfa Say'#305's'#305
+        Title.Color = clHighlight
+        Title.Font.Charset = ANSI_CHARSET
+        Title.Font.Color = clHighlight
+        Title.Font.Height = -12
+        Title.Font.Name = 'Times New Roman'
+        Title.Font.Style = [fsBold]
+        Width = 247
+        Visible = True
+      end>
+  end
+  object GroupBox1: TGroupBox
+    Left = 22
+    Top = 17
+    Width = 233
+    Height = 161
+    Caption = 'Ki'#351'i Bilgileri'
+    TabOrder = 1
+    object Label1: TLabel
+      Left = 8
+      Top = 38
+      Width = 64
+      Height = 15
+      Caption = #214#287'renci No:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 8
+      Top = 65
+      Width = 23
+      Height = 15
+      Caption = 'Ad'#305':'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label3: TLabel
+      Left = 8
+      Top = 93
+      Width = 37
+      Height = 15
+      Caption = 'Soyad'#305
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label4: TLabel
+      Left = 8
+      Top = 121
+      Width = 62
+      Height = 15
+      Caption = 'Telefon No:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+    end
+    object DBEdit1: TDBEdit
+      Left = 93
+      Top = 36
+      Width = 121
+      Height = 21
+      Cursor = crIBeam
+      DataField = 'Ogrenci_No'
+      DataSource = DataSource1
+      TabOrder = 0
+    end
+    object DBEdit2: TDBEdit
+      Left = 93
+      Top = 63
+      Width = 121
+      Height = 21
+      Cursor = crIBeam
+      DataField = #304'sim'
+      DataSource = DataSource1
+      TabOrder = 1
+    end
+    object DBEdit3: TDBEdit
+      Left = 93
+      Top = 90
+      Width = 121
+      Height = 21
+      Cursor = crIBeam
+      DataField = 'Soyisim'
+      DataSource = DataSource1
+      TabOrder = 2
+    end
+    object DBEdit4: TDBEdit
+      Left = 93
+      Top = 117
+      Width = 121
+      Height = 21
+      Cursor = crIBeam
+      DataField = 'Telefon_No'
+      DataSource = DataSource1
+      TabOrder = 3
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 19
+    Top = 184
+    Width = 236
+    Height = 353
+    Caption = 'Kitap Bilgileri'
+    TabOrder = 2
+    object Label5: TLabel
+      Left = 6
+      Top = 26
+      Width = 73
+      Height = 15
+      Caption = 'Kitap Barkod:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label6: TLabel
+      Left = 6
+      Top = 61
+      Width = 54
+      Height = 15
+      Caption = 'Kitap Ad'#305':'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label7: TLabel
+      Left = 6
+      Top = 96
+      Width = 53
+      Height = 15
+      Caption = 'Yazar Ad'#305':'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label8: TLabel
+      Left = 6
+      Top = 131
+      Width = 68
+      Height = 15
+      Caption = 'Sayfa Say'#305's'#305':'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label9: TLabel
+      Left = 6
+      Top = 230
+      Width = 58
+      Height = 15
+      Caption = 'Al'#305#351' Tarihi:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label10: TLabel
+      Left = 5
+      Top = 266
+      Width = 68
+      Height = 15
+      Caption = 'Verili'#351' Tarihi:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+    end
+    object SpeedButton1: TSpeedButton
+      Left = 83
+      Top = 319
+      Width = 57
+      Height = 25
+      Caption = 'Emanet Sil'
+      OnClick = SpeedButton1Click
+    end
+    object SpeedButton2: TSpeedButton
+      Left = 168
+      Top = 319
+      Width = 65
+      Height = 25
+      Caption = 'Teslim Et'
+      OnClick = SpeedButton2Click
+    end
+    object SpeedButton3: TSpeedButton
+      Left = 3
+      Top = 319
+      Width = 57
+      Height = 25
+      Caption = 'Yeni Kay'#305't'
+      OnClick = SpeedButton3Click
+    end
+    object Label12: TLabel
+      Left = 2
+      Top = 291
+      Width = 164
+      Height = 15
+      Caption = 'T'#252'm bo'#351' alanlar'#305' doldurunuz !'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clRed
+      Font.Height = -13
+      Font.Name = 'Times New Roman'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label13: TLabel
+      Left = 3
+      Top = 173
+      Width = 222
+      Height = 15
+      Caption = 'Tarihleri Sistem Taraf'#305'ndan Hesaplat (15 G'#252'n)'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+    end
+    object DBEdit5: TDBEdit
+      Left = 96
+      Top = 24
+      Width = 121
+      Height = 21
+      Cursor = crIBeam
+      DataField = 'Kitap_Barkod'
+      DataSource = DataSource1
+      TabOrder = 0
+    end
+    object DBEdit6: TDBEdit
+      Left = 96
+      Top = 59
+      Width = 121
+      Height = 21
+      Cursor = crIBeam
+      DataField = 'Kitap_Adi'
+      DataSource = DataSource1
+      TabOrder = 1
+    end
+    object DBEdit7: TDBEdit
+      Left = 96
+      Top = 97
+      Width = 121
+      Height = 21
+      Cursor = crIBeam
+      DataField = 'Yazar_Adi'
+      DataSource = DataSource1
+      TabOrder = 2
+    end
+    object DBEdit8: TDBEdit
+      Left = 96
+      Top = 132
+      Width = 121
+      Height = 21
+      Cursor = crIBeam
+      DataField = 'Sayfa_Sayisi'
+      DataSource = DataSource1
+      TabOrder = 3
+    end
+    object DBEdit9: TDBEdit
+      Left = 96
+      Top = 232
+      Width = 121
+      Height = 21
+      Cursor = crIBeam
+      DataField = 'Alis_Tarihi'
+      DataSource = DataSource1
+      TabOrder = 4
+    end
+    object DBEdit10: TDBEdit
+      Left = 96
+      Top = 259
+      Width = 121
+      Height = 21
+      DataField = 'Verilis_Tarihi'
+      DataSource = DataSource1
+      TabOrder = 5
+    end
+    object Button2: TButton
+      Left = 163
+      Top = 192
+      Width = 54
+      Height = 26
+      Caption = 'Hesaplat'
+      TabOrder = 6
+    end
+  end
+  object Button1: TButton
+    Left = 280
+    Top = 437
+    Width = 169
+    Height = 25
+    Caption = 'Emanet Kitap Say'#305's'#305
+    TabOrder = 3
+    OnClick = Button1Click
+  end
+  object ADOTable1: TADOTable
+    Active = True
+    Connection = Form3.ADOConnection1
+    CursorType = ctStatic
+    TableName = 'EmanetDurum'
+    Left = 616
+    Top = 456
+  end
+  object DataSource1: TDataSource
+    DataSet = ADOTable1
+    Left = 688
+    Top = 456
+  end
+end

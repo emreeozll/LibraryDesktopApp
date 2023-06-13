@@ -1,0 +1,143 @@
+﻿unit Unit6;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Mask, Vcl.DBCtrls,
+  Data.DB, Vcl.Buttons;
+
+type
+  TForm6 = class(TForm)
+    GroupBox1: TGroupBox;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    DBEdit1: TDBEdit;
+    DBEdit2: TDBEdit;
+    DBEdit3: TDBEdit;
+    DBEdit4: TDBEdit;
+    DBEdit5: TDBEdit;
+    DBEdit6: TDBEdit;
+    DBEdit7: TDBEdit;
+    Label1: TLabel;
+    DBEdit8: TDBEdit;
+    DBImage1: TDBImage;
+    Label9: TLabel;
+    SpeedButton1: TSpeedButton;
+    SpeedButton2: TSpeedButton;
+    SpeedButton3: TSpeedButton;
+    Button1: TButton;
+    OpenDialog1: TOpenDialog;
+    Label10: TLabel;
+    Label11: TLabel;
+    DBEdit9: TDBEdit;
+    procedure SpeedButton1Click(Sender: TObject);
+    procedure SpeedButton2Click(Sender: TObject);
+    procedure SpeedButton3Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form6: TForm6;
+    kitapSayisi : Integer;
+implementation
+
+{$R *.dfm}
+ uses Unit3, Jpeg;
+
+procedure TForm6.Button1Click(Sender: TObject);
+begin
+         if Opendialog1.Execute() then begin
+
+             DBImage1.Picture.LoadFromFile(OpenDialog1.FileName);
+
+         end;
+
+end;
+
+procedure TForm6.SpeedButton1Click(Sender: TObject);
+begin
+              Form3.ADOTable2.Insert;
+end;
+
+procedure TForm6.SpeedButton2Click(Sender: TObject);
+var
+kitapKontrol : Array [1..8] of String;
+durum:Boolean;
+  x: Integer;
+  kontrol : Array [1..10] of String;
+begin
+                kitapSayisi := 0;
+
+                kontrol[1] := DBEdit1.Text;
+                kontrol[2] := DBEdit2.Text;
+                kontrol[3] := DBEdit3.Text;
+                kontrol[4] := DBEdit4.Text;
+                kontrol[5] := DBEdit5.Text;
+                kontrol[6] := DBEdit6.Text;
+                kontrol[7] := DBEdit7.Text;
+                kontrol[8] := DBEdit8.Text;
+                kontrol[9] := DBEdit9.Text;
+
+                for x := 1 to 9 do begin
+
+                  if (kontrol[x] <> ' ') then begin
+
+                  durum := false;
+
+                  end else
+
+                  begin
+
+                  durum:= true;
+
+                  end;
+
+
+                end;
+
+
+               if (durum = false) then begin
+
+                      Label10.Caption := ' Tüm boş alanları doldurmanız gereklidir. ';
+                      Label10.Show;
+
+               end;
+
+               if (durum = true) then begin
+
+                        Form3.ADOTable2.Post;
+
+
+                        ShowMessage('Kitap kayıt edildi.');
+                        Label10.Caption := ' Kitap kayıt edildi. ';
+                        Label10.Show;
+
+
+                        kitapSayisi := kitapSayisi +1;
+                         Form3.Label2.Caption:= 'Toplam Kişi Sayısı: ' + IntToStr(kitapSayisi);
+               end;
+
+end;
+
+procedure TForm6.SpeedButton3Click(Sender: TObject);
+begin
+
+               Form3.ADOTable2.Delete;
+                  ShowMessage('Kitap silindi.');
+
+               kitapSayisi := kitapSayisi -1;
+                  Form3.Label2.Caption:= 'Toplam Kişi Sayısı: ' + IntToStr(kitapSayisi);
+
+end;
+
+end.

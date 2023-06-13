@@ -1,0 +1,114 @@
+﻿unit Unit9;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.StdCtrls, Vcl.Grids,
+  Vcl.DBGrids, Vcl.Mask, Vcl.DBCtrls, Data.Win.ADODB, Vcl.Buttons;
+
+type
+  TForm9 = class(TForm)
+    DBGrid1: TDBGrid;
+    GroupBox1: TGroupBox;
+    GroupBox2: TGroupBox;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    DBEdit1: TDBEdit;
+    DBEdit2: TDBEdit;
+    DBEdit3: TDBEdit;
+    DBEdit4: TDBEdit;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    Label9: TLabel;
+    DBEdit5: TDBEdit;
+    DBEdit6: TDBEdit;
+    DBEdit7: TDBEdit;
+    DBEdit8: TDBEdit;
+    DBEdit9: TDBEdit;
+    ADOTable1: TADOTable;
+    DataSource1: TDataSource;
+    Label10: TLabel;
+    Label11: TLabel;
+    SpeedButton1: TSpeedButton;
+    SpeedButton2: TSpeedButton;
+    SpeedButton3: TSpeedButton;
+    Label12: TLabel;
+    DBEdit10: TDBEdit;
+    Button1: TButton;
+    Button2: TButton;
+    Label13: TLabel;
+    procedure SpeedButton2Click(Sender: TObject);
+    procedure SpeedButton3Click(Sender: TObject);
+    procedure SpeedButton1Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form9: TForm9;
+
+implementation
+
+{$R *.dfm}
+
+uses Unit3;
+
+procedure TForm9.Button1Click(Sender: TObject);
+var
+emanetKitap : Integer;
+begin
+             emanetKitap := 0;
+
+                     ADOTable1.First;
+
+               repeat
+                        ADOTable1.Next;
+
+                        emanetKitap := emanetKitap + 1;
+                         Label1.Caption :=  'Toplam emanet edilen kitap Sayısı: ' + IntToStr(emanetKitap);
+
+               until (ADOTable1.Eof);
+end;
+
+procedure TForm9.SpeedButton1Click(Sender: TObject);
+begin
+             ADOTable1.Delete;
+
+end;
+
+procedure TForm9.SpeedButton2Click(Sender: TObject);
+var
+
+verilis1 : TDate;
+alis1 : Tdate;
+
+begin
+
+
+                     alis1:=Date();
+                     DBEdit9.Text := DateToStr(alis1);
+
+                     verilis1 := alis1 +15;
+                     DBEdit10.Text :=  DateToStr( verilis1);
+
+                     ADOTable1.Post;
+                     ShowMessage('Kullanıcı kayıt edildi.');
+
+
+
+end;
+
+procedure TForm9.SpeedButton3Click(Sender: TObject);
+begin
+             ADOTable1.Insert;
+end;
+
+end.

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.394,=C:\Users\ozlle\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.058,C:\Users\ozlle\Documents\Embarcadero\Studio\Projects\Proje-EmreOzel\Unit4.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.096,=C:\Users\ozlle\Documents\Embarcadero\Studio\Projects\Proje-EmreOzel\Unit4.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.480,C:\Users\ozlle\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\ozlle\Documents\Embarcadero\Studio\Projects\Proje-EmreOzel\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.426,=C:\Users\ozlle\Documents\Embarcadero\Studio\Projects\Proje-EmreOzel\Unit6.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.611,C:\Users\ozlle\Documents\Embarcadero\Studio\Projects\Proje-EmreOzel\Libnest.dproj=C:\Users\ozlle\Documents\Embarcadero\Studio\Projects\Proje-EmreOzel\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.945,=C:\Users\ozlle\Documents\Embarcadero\Studio\Projects\Proje-EmreOzel\Unit9.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.333,=C:\Users\ozlle\Documents\Embarcadero\Studio\Projects\Proje-EmreOzel\Unit5.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.481,=C:\Users\ozlle\Documents\Embarcadero\Studio\Projects\Proje-EmreOzel\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.480,C:\Users\ozlle\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\ozlle\Documents\Embarcadero\Studio\Projects\Proje-EmreOzel\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.794,=C:\Users\ozlle\Documents\Embarcadero\Studio\Projects\Proje-EmreOzel\Unit8.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.585,=C:\Users\ozlle\Documents\Embarcadero\Studio\Projects\Proje-EmreOzel\Unit7.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.263,C:\Users\ozlle\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\ozlle\Documents\Embarcadero\Studio\Projects\Proje-EmreOzel\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.005,=C:\Users\ozlle\Documents\Embarcadero\Studio\Projects\Proje-EmreOzel\Unit3.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="-1" SortType="1"/>
+</BorlandProject>
