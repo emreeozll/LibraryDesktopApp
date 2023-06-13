@@ -2,8 +2,7 @@
 Bu proje örnek bir uygulama ve proje ödevi için bu github kullanıcısı tarafından yapılmıştır.
 ---------------------------------------------------------------------------------------------
 
- ## *Proje Adı:* 
-- Libnest(LibraryNest)
+ ## *Proje Adı:* Libnest(LibraryNest)
  ## *Proje İçeriği:*
 - Kütüphane uygulaması adına yapılmıştır. Okuyucu ile kitapları buluşturan bir amaç düşünülerek geliştirilmiştir.
 - Db olarak MicrosoftAccess kullanılmış olup, AdoConnecion, ADOTable ve DataSource kaynakları bağlıdır fakat gerekirse aktifleştirilmedir.
