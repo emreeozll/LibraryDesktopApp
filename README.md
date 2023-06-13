@@ -1,4 +1,4 @@
-# **Delphi Kütüphane Otomasyonu **
+# ** Delphi Kütüphane Otomasyonu **
 Bu proje örnek bir uygulama ve proje ödevi için bu github kullanıcısı tarafından yapılmıştır.
 ---------------------------------------------------------------------------------------------
 
